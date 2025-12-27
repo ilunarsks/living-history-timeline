@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Race Timeline - Living History Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-rocket"></i> The Space Race Timeline</h1>
+            <p class="subtitle">A collaborative digital history project – from Sputnik to Apollo–Soyuz</p>
+            <nav>
+                <ul>
+                    <li><a href="#timeline" class="active">Timeline</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contribute">Contribute</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="timeline">
+            <h2><i class="fas fa-history"></i> Chronological Events</h2>
+            <div class="timeline-controls">
+                <button id="filter-all" class="filter-btn active">All Events</button>
+                <button id="filter-ussr" class="filter-btn">USSR</button>
+                <button id="filter-usa" class="filter-btn">USA</button>
+                <button id="filter-milestone" class="filter-btn">Milestones</button>
+                <input type="text" id="search-input" placeholder="Search events...">
+            </div>
+            <div id="timeline-container">
+                <!-- Timeline events will be dynamically inserted here -->
+                <div class="timeline-placeholder">
+                    <p><i class="fas fa-satellite"></i> The timeline is being built collaboratively by students.</p>
+                    <p>Events will appear here as they are added via GitHub pull requests.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2><i class="fas fa-info-circle"></i> About This Project</h2>
+            <p>This interactive timeline is the result of a semester‑long, project‑based learning unit. Students work together using GitHub to research, write, code, and review content about the Space Race (1955–1975).</p>
+            <p>The project simulates a real‑world development team: tasks are tracked as Issues, contributions are made via Pull Requests, and quality is ensured through peer code review.</p>
+            <p><strong>Learning objectives</strong> include collaborative development, project management, content curation, web development, and quality assurance.</p>
+            <a href="https://github.com/ilunarsks/living-history-timeline" class="github-link" target="_blank"><i class="fab fa-github"></i> View the GitHub Repository</a>
+        </section>
+
+        <section id="contribute">
+            <h2><i class="fas fa-hands-helping"></i> How to Contribute</h2>
+            <ol>
+                <li><strong>Fork</strong> the repository to your own GitHub account.</li>
+                <li><strong>Clone</strong> your fork locally and create a new branch for your task.</li>
+                <li><strong>Claim an Issue</strong> from the Issues tab and assign it to yourself.</li>
+                <li><strong>Research</strong> the event and add it to <code>data/events.json</code>.</li>
+                <li><strong>Commit & push</strong> your changes, then open a Pull Request.</li>
+                <li><strong>Link the Issue</strong> in the PR description with <code>Closes #XX</code>.</li>
+                <li><strong>Address feedback</strong> from peer reviewers before merging.</li>
+            </ol>
+            <p>Each merged Pull Request automatically adds a new event to the timeline!</p>
+        </section>
+
+        <section id="resources">
+            <h2><i class="fas fa-book-open"></i> Resources & References</h2>
+            <ul>
+                <li><a href="https://www.nasa.gov/history" target="_blank">NASA History Office</a></li>
+                <li><a href="https://www.russianspaceweb.com" target="_blank">Russian Space Web</a></li>
+                <li><a href="https://www.space.com/space-race" target="_blank">Space.com – The Space Race</a></li>
+                <li><a href="https://github.com/ilunarsks/living-history-timeline/wiki" target="_blank">Project Wiki (on GitHub)</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Living History Timeline Project &copy; 2025 – Licensed under MIT.</p>
+            <p>This project is for educational purposes. Timeline theme: <strong>The Space Race</strong>.</p>
+            <p class="github-stats">
+                <i class="fas fa-code-branch"></i> <span id="commit-count">0</span> commits · 
+                <i class="fas fa-tasks"></i> <span id="issue-count">0</span> open issues · 
+                <i class="fas fa-users"></i> <span id="contributor-count">0</span> contributors
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // Simple placeholder for dynamic stats (could be replaced with GitHub API calls)
+        document.getElementById('commit-count').textContent = '...';
+        document.getElementById('issue-count').textContent = '...';
+        document.getElementById('contributor-count').textContent = '...';
+    </script>
+</body>
+</html>
