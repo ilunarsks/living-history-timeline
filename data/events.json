@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "date": "October 4, 1957",
+    "title": "Sputnik 1 Launch",
+    "description": "The Soviet Union launched Sputnik 1, the world's first artificial satellite, marking the beginning of the Space Age and the Space Race.",
+    "country": "USSR",
+    "category": "milestone",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Sputnik_1.jpg/320px-Sputnik_1.jpg",
+    "sources": [
+      "https://www.nasa.gov/mission_pages/sputnik/",
+      "https://en.wikipedia.org/wiki/Sputnik_1"
+    ]
+  },
+  {
+    "id": 2,
+    "date": "April 12, 1961",
+    "title": "Yuri Gagarin – First Human in Space",
+    "description": "Soviet cosmonaut Yuri Gagarin orbited Earth aboard Vostok 1, becoming the first human to travel into space.",
+    "country": "USSR",
+    "category": "milestone",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Yuri_Gagarin_%281961%29_-_Restored.jpg/320px-Yuri_Gagarin_%281961%29_-_Restored.jpg",
+    "sources": [
+      "https://www.nasa.gov/mission_pages/gagarin/",
+      "https://en.wikipedia.org/wiki/Yuri_Gagarin"
+    ]
+  },
+  {
+    "id": 3,
+    "date": "May 5, 1961",
+    "title": "Alan Shepard – First American in Space",
+    "description": "Astronaut Alan Shepard made a suborbital flight aboard Freedom 7, becoming the first American to travel into space.",
+    "country": "USA",
+    "category": "milestone",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Alan_Shepard_-_GPN-2000-001482.jpg/320px-Alan_Shepard_-_GPN-2000-001482.jpg",
+    "sources": [
+      "https://www.nasa.gov/mission_pages/mercury/missions/freedom7.html",
+      "https://en.wikipedia.org/wiki/Alan_Shepard"
+    ]
+  }
+]
